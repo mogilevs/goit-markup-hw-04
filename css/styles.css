@@ -109,10 +109,17 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.sec-one {
-  background-color: #2e2f42;
+.hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office1.jpg);
+  background-size: contain;
   padding-top: 188px;
   padding-bottom: 188px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .title {
   font-size: 56px;
@@ -171,6 +178,9 @@ img {
 .sec-two-card {
   width: calc((100% - 72px) / 4);
 }
+.sec-two-card-icon {
+  padding: 24px 100px;
+}
 .sec-two-list-title {
   font-size: 20px;
   font-weight: 500;
@@ -211,7 +221,7 @@ img {
   width: calc((100% - 72px) / 4);
 }
 .sec-three-card-card {
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 
 .sec-three-card-title {
@@ -228,7 +238,28 @@ img {
   text-align: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
+.soc-net-icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.soc-net-icon-bg {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #4d5ae5;
+  position: relative;
+}
+.soc-net-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .sec-four-title {
   font-size: 36px;
   font-weight: 700;
@@ -275,11 +306,17 @@ img {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 .footer-text {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
+  margin-right: 120px;
 }
 .footer-logo-text {
   color: #f4f4fd;
@@ -287,4 +324,18 @@ img {
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
+}
+.soc-med-title {
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.soc-med {
+  width: 208px;
+  height: 40px;
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
 }
