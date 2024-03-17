@@ -315,7 +315,7 @@ img {
   position: relative;
   overflow: hidden;
 }
-.box:hover .overlay-text {
+.sec-four-card:hover .overlay-text {
   transform: translateY(0);
 }
 .overlay-text {
